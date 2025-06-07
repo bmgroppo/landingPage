@@ -1,0 +1,238 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("images/Fundo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: rgb(0, 100, 255);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    min-height: 90vh;
+}
+    footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 0, 255, 0.6);
+    margin-top: 30px;
+    }
+
+
+#intro {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#apresentacao p {
+    font-size: 26px;
+}
+
+#apresentacao span {
+    color: rgb(0, 100, 255);
+    font-weight: bold;
+}
+
+#redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+#redes-sociais img {
+    width: 45px;
+    transition: transform 0.3s;
+}
+
+#redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+#intro button {
+    margin-top: 10px;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#intro button:hover {
+    background-color: rgb(0, 0, 255, 0.6);
+    color: white;
+}
+
+#img-dev img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* SOBRE MIM */
+#sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 60px 40px;
+    border-top: 2px solid black;
+    flex-wrap: wrap;
+}
+
+#resumo, #meusConhecimentos {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobreMim h2 {
+    font-size: 40px;
+    color: rgb(0, 100, 255);
+}
+
+#resumo p,
+#meusConhecimentos ul li {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* CONTATO */
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 40px;
+    color: rgb(0, 100, 255);
+}
+
+#contato p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#btnEnviar {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnEnviar:hover {
+    background-color: rgb(0, 0, 255, 0.6);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 950px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    #img-dev {
+        display: none;
+    }
+
+    #sobreMim {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #contato form input,
+    #contato form textarea {
+        width: 100%;
+    }
+}

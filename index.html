@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="intro">
+            <div id="apresentacao">
+                <p>Olá, seja bem-vindo(a) ao meu portfólio!</p>
+                <p>Meu nome é <span>Bruno Groppo</span> e eu sou um estudante de desenvolvimento de Sistemas.</p>
+            </div>
+            <div id="redes-sociais">
+                <a href="https://github.com/bmgroppo" target="_blank" rel="noopener noreferrer"><img src="./images/icons8-github-50.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/brunogroppo1980/" target="_blank" rel="noopener noreferrer"><img src="./images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+            </div>
+            <a href="#sobreMim"><button>Conheça mais sobre mim</button></a>
+        </div>
+        <div id="img-dev">
+            <img src="images/Desenvolvedor.png" alt="Desenvolvedor">
+        </div>
+    </main>
+
+    <section id="sobreMim">
+        <div id="resumo">
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="meusConhecimentos">
+            <h2>Meus conhecimentos</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Você pode me enviar uma mensagem!</h2>
+        <p>Preencha o formulário abaixo e entrarei em contato.</p>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+            
+            <input id="btnEnviar" type="submit" value="Enviar">
+        </form>
+    </section>
+<footer>
+    © 2025 Bruno Groppo - Todos os direitos reservados.
+  </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
