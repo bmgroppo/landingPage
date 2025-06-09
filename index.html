@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#sobreMim">Sobre mim</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html">Início</a></li>
             </ul>
         </nav>
     </header>
@@ -21,7 +22,7 @@
         <div id="intro">
             <div id="apresentacao">
                 <p>Olá, seja bem-vindo(a) ao meu portfólio!</p>
-                <p>Meu nome é <span>Bruno Groppo</span> e eu sou um estudante de desenvolvimento de Sistemas.</p>
+                <p>Meu nome é <span>Bruno Groppo</span> e eu sou um estudante de Análise e Desenvolvimento de Sistemas.</p>
             </div>
             <div id="redes-sociais">
                 <a href="https://github.com/bmgroppo" target="_blank" rel="noopener noreferrer"><img src="./images/icons8-github-50.png" alt="GitHub"></a>
@@ -37,7 +38,11 @@
     <section id="sobreMim">
         <div id="resumo">
             <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Sou apaixonado por tecnologia e desenvolvimento de software. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas e venho aprimorando minhas habilidades em HTML, CSS e JavaScript.
+
+Minha jornada na programação começou com a curiosidade de entender como os sistemas funcionam e como posso usá-los para criar soluções inovadoras. Desde então, tenho me dedicado a aprender e aplicar meus conhecimentos em projetos práticos.
+
+Estou sempre buscando novos desafios e oportunidades para evoluir, seja por meio de estudos, projetos ou colaborações. Se quiser trocar ideias ou trabalhar juntos, será um prazer!</p>
         </div>
         <div id="meusConhecimentos">
             <h2>Meus conhecimentos</h2>
@@ -52,7 +57,7 @@
     <section id="contato">
         <h2>Você pode me enviar uma mensagem!</h2>
         <p>Preencha o formulário abaixo e entrarei em contato.</p>
-        <form>
+        <form onsubmit="validarFormulario(event)" id="formulario">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br><br>
             

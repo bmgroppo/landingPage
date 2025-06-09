@@ -124,6 +124,7 @@ main {
 
 /* SOBRE MIM */
 #sobreMim {
+    text-align: justify;
     display: flex;
     justify-content: center;
     align-items: flex-start;
